@@ -1,0 +1,43 @@
+body {
+	padding-top: 75px;
+	background-color: #392F5A;
+
+	color: #eeedeb;
+	font-family: "Lato";
+}
+
+img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+h1 {
+	padding-bottom: 30px;
+	font-size: 3.0rem;
+	font-family: "Comfortaa";
+}
+
+.fun-link {
+	display: inline-block;
+	background-image: url("star.png");
+	background-size: cover;
+
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	height: 150px;
+	width: 150px;
+	line-height: 140px;
+}
+
+.fun-link a {
+	text-decoration: none;
+	color: #836887;
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.fun-link a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
