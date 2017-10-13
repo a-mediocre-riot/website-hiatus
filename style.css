@@ -1,5 +1,6 @@
 body {
 	padding-top: 75px;
+	padding-bottom: 75px;
 	background-color: #392F5A;
 
 	color: #eeedeb;
@@ -26,32 +27,38 @@ img {
 }
 
 h1 {
-	padding-bottom: 30px;
 	font-size: 3.0rem;
 	font-family: "Comfortaa";
 }
 
-.fun-link {
+small {
 	display: inline-block;
-	background-image: url("star.png");
-	background-size: cover;
+	padding-bottom: 30px;
 
+	color: #F4DAB6;
+	font-size: 1.5rem;
+}
+
+.link-row {
 	margin-top: 30px;
-	margin-bottom: 30px;
-
-	height: 150px;
-	width: 150px;
-	line-height: 140px;
 }
 
-.fun-link a {
-	text-decoration: none;
+.link-row a:hover {
+	opacity: 0.75;
+}
+
+.social-links a {
+	color: #C29EAC;
+}
+
+.social-links a:hover {
 	color: #836887;
-	font-weight: bold;
-	font-size: 1rem;
+	text-decoration: none;
 }
 
-.fun-link a:hover {
-	color: #FFFFFF;
-	text-decoration: none;
+.social-links .break:before {
+	content: "-";
+	margin-left: 15px;
+	margin-right: 15px;
+	color: #836887;
 }
