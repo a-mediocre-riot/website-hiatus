@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<?php wp_head(); ?>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,13 +18,13 @@
 	<!-- GOOGLE FONTS -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa|Lato">
 
-
 	<!-- BOOTSTRAP -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
 	      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 	<!-- CUSTOM CSS -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+
 </head>
 
 <body>
@@ -34,7 +36,7 @@
 
 				<!-- DRAWING -->
 				<div class="col-lg-6">
-					<img src="images/drawing.png" alt="Illustration of Gina and her dog Winston" title="That's me and my dog Winston, drawn by @eelbunny on Instagram!">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/drawing.png" alt="Illustration of Gina and her dog Winston" title="That's me and my dog Winston, drawn by @eelbunny on Instagram!">
 				</div>
 
 				<!-- INFO & LINKS -->
@@ -50,21 +52,21 @@
 						<!-- CODEPEN LINK -->
 						<div class="col-4">
 							<a href="https://www.codepen.io/ginamarie-tech">
-								<img src="images/codepen.png" alt="CodePen">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/codepen.png" alt="CodePen">
 							</a>
 						</div>
 
 						<!-- BEHANCE LINK -->
 						<div class="col-4">
 							<a href="https://www.behance.net/gina8928">
-								<img src="images/behance.png" alt="Behance">
+								<img src="<?php echo get_template_directory_uri(); ?>/images/behance.png" alt="Behance">
 							</a>
 						</div>
 
 						<!-- GITHUB LINK -->
 						<div class="col-4">
 						<a href="https://www.github.com/a-mediocre-riot">
-							<img src="images/github.png" alt="GitHub">
+							<img src="<?php echo get_template_directory_uri(); ?>/images/github.png" alt="GitHub">
 							</a>
 						</div>
 					</div><!--.row-->
@@ -85,5 +87,6 @@
 		</div><!--.container-->
 	</div><!--.aligner-->
 
+	<?php wp_footer(); ?>
 </body>
 </html>
